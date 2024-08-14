@@ -1,0 +1,195 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header .logo {
+            float: left;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            color: #171616;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero .btn {
+            background: #ff6f61;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        
+        .content-section {
+            padding: 2rem 0;
+            background: #fff;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .content-section p {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        
+        @media (max-width: 600px) {
+            header .logo, header nav {
+                float: none;
+                text-align: center;
+            }
+
+            header nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+
+            header nav ul li {
+                margin-bottom: 10px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">MyCompany</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Welcome to Our Landing Page</h1>
+                <p>Your journey starts here.</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </section>
+        
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Learn more about what we do and our mission to deliver outstanding results.</p>
+            </div>
+        </section>
+        
+        <section id="services" class="content-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>Discover our range of services designed to help you succeed.</p>
+            </div>
+        </section>
+        
+        <section id="contact" class="content-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for more information or to request a quote.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MyCompany. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

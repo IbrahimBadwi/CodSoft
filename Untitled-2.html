@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ibrahim Badawi, Web Developer & Designer">
+    <title>Ibrahim Badawi | Portfolio</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .about img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .about:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li, .projects li {
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #1a1a1a;
+            border-radius: 5px;
+        }
+        .projects img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .projects h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .projects p {
+            margin-bottom: 0;
+            font-size: 1em;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .about img {
+                float: none;
+                display: block;
+                margin: 0 auto 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ibrahim Badawi</h1>
+        <p>Web Developer & Designer</p>
+    </header>
+    
+    <div class="container">
+        <section class="about section">
+            <h2>About Me</h2>
+            <img src="C:\Users\User\Desktop\ibrahim.jpg.jpeg" alt="Photo of Ibrahim Badawi">
+            <p>Hello! I am Ibrahim Badawi, a passionate web developer with a knack for designing beautiful and functional websites. With a strong background in HTML, CSS, and JavaScript, I enjoy creating user-friendly experiences on the web.</p>
+        </section>
+        
+        <section class="skills section">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+        
+        <section class="projects section">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Web Portfolio</h3>
+                    <p>A personal portfolio website to showcase my projects and skills. Built with HTML, CSS, and JavaScript.</p>
+                    <img src="\Users\User\Desktop\demo.jfif" alt="Screenshot of Web Portfolio project">
+                </li>
+                <li>
+                    <h3>eCommerce Website</h3>
+                    <p>An online store built with React and Node.js, featuring a responsive design and secure payment integration.</p>
+                    <img src="\Users\User\Desktop\demo2.jfif" alt="Screenshot of eCommerce Website project">
+                </li>
+                <li>
+                    <h3>Blog Platform</h3>
+                    <p>A blogging platform that allows users to create, edit websites Blog or Apps. Built with Node.js and Express.</p>
+                    <img src="\Users\User\Desktop\demo3.png" alt="Screenshot of Blog Platform project">
+                </li>
+            </ul>
+        </section>
+        
+        <section class="resume section">
+            <h2>Resume</h2>
+            <p><a href="resume.pdf" download>Download My Resume</a></p>
+        </section>
+        
+        <section class="contact section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:bib.baher15@gmail.com">bib.baher15@gmail.com</a></p>
+            <p>Phone: +961 81 613 998</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Ibrahim Badawi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
